@@ -60,9 +60,11 @@
   # services.printing.enable = true;
 
   # Enable the X11 windowing system.
-  # services.xserver.enable = true;
+  services.xserver.enable = true;
   # services.xserver.layout = "us";
   # services.xserver.xkbOptions = "eurosign:e";
+  services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.windowManager.xmonad.enable = true;
 
   # Enable touchpad support.
   # services.xserver.libinput.enable = true;
