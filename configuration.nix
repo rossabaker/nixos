@@ -41,7 +41,10 @@
     git
     google-chrome
     haskellPackages.xmobar
+    openjdk
     pasystray
+    sbt
+    scala
     stow
     trayer
   ];
