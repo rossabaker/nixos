@@ -37,6 +37,7 @@
   environment.systemPackages = with pkgs; [
     emacs
     git
+    stow
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
