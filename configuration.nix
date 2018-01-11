@@ -45,6 +45,7 @@
     pasystray
     sbt
     scala
+    spotify
     stow
     trayer
   ];
