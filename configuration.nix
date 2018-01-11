@@ -64,8 +64,17 @@
   services.xserver.enable = true;
   # services.xserver.layout = "us";
   # services.xserver.xkbOptions = "eurosign:e";
-  services.xserver.desktopManager.xfce.enable = true;
-  services.xserver.windowManager.xmonad.enable = true;
+  services.xserver.desktopManager = {
+    xfce = {
+      enable = true;
+      noDesktop = true;
+    };
+    default = "xfce";
+  };
+  services.xserver.windowManager.xmonad = {
+    enable = true;
+    enableContribAndExtras = true;
+  };
 
   # Enable touchpad support.
   # services.xserver.libinput.enable = true;
