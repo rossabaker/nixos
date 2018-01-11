@@ -46,6 +46,14 @@
     trayer
   ];
 
+  fonts = {
+    enableFontDir = true;
+    fonts = with pkgs; [
+      corefonts
+      hack-font
+    ];
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.bash.enableCompletion = true;
