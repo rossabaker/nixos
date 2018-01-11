@@ -35,10 +35,15 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    blueman
+    compton
     emacs
     git
     google-chrome
+    haskellPackages.xmobar
+    pasystray
     stow
+    trayer
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
