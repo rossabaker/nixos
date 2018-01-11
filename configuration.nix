@@ -83,12 +83,15 @@
   # services.xserver.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.plasma5.enable = true;
 
+  programs.zsh.enable = true;
+  
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.ross = {
     home = "/home/ross";
     description = "Ross A. Baker";
     extraGroups = [ "wheel" "networkmanager" ];
     isNormalUser = true;
+    shell = pkgs.zsh;
     uid = 1000;
   };
 
