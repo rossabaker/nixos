@@ -37,6 +37,7 @@
   environment.systemPackages = with pkgs; [
     emacs
     git
+    google-chrome
     stow
   ];
 
